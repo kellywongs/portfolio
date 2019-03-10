@@ -1,8 +1,13 @@
 html {
 	margin: 0;
+	height: 100%;
+	width: 100%;
 	
-	--main-color: #820602; /*red*/
-	--accent-color: #fcb649; /*yellow*/
+	--mainColor: #820602; /*red*/
+	--accentColor: #fcb649; /*yellow*/
+	
+	--headerFont: Inconsolata;
+	--bodyFont: Helvetica;
 }
 
 #navigation {
@@ -13,10 +18,9 @@ html {
 
 /* images */
 
-#parallaxBackgroundTop {  /* styles the parallaxBackgroundTop div */
-	background-image: url("images/IMG_0445.jpeg");
+#parallaxBackground {  /* styles the parallaxBackgroundTop div */
 
-    height: 100%; 
+	height: 100%; 
     width: 100%;
 
     background-attachment: fixed;
@@ -31,5 +35,9 @@ html {
 /* text */
 
 h1 {
-	color: var(--main-color);
+	color: var(--mainColor);
+}
+
+body {
+	font: var(--bodyFont);
 }
