@@ -1,4 +1,35 @@
+html {
+	margin: 0;
+	
+	--main-color: #820602; /*red*/
+	--accent-color: #fcb649; /*yellow*/
+}
+
 #navigation {
 	flex-direction: column;
 	justify-content: center;
+}
+
+
+/* images */
+
+#parallaxBackgroundTop {  /* styles the parallaxBackgroundTop div */
+	background-image: url("images/IMG_0445.jpeg");
+
+    height: 100%; 
+    width: 100%;
+
+    background-attachment: fixed;
+    background-position: center; /* 'center center' keeps the entire image centered as opposed to... not doing that */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    position: relative;
+    
+}
+
+/* text */
+
+h1 {
+	color: var(--main-color);
 }
