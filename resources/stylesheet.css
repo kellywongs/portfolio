@@ -16,7 +16,21 @@ html {
 
 /* images */
 
+#parallaxBackground {  /* styles the parallaxBackgroundTop div */
 
+	background-image: url("images/IMG_0445.jpeg");
+
+	height: 100%; 
+    width: 100%;
+
+    background-attachment: fixed;
+    background-position: center; /* 'center center' keeps the entire image centered as opposed to... not doing that */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    position: relative;
+    
+}
 
 /* text */
 
@@ -34,12 +48,36 @@ body {
 
 #header {
 	text-transform: lowercase;
+	
+	
 }
 
 #navigation {
-	text-transform: lowercase;
+	margin-top: -15px;
 }
 
-#navigation #bio {
-	background-image: ;
+#navigation ul {
+	text-transform: lowercase;
+	
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#navigation li {
+	display: inline;
+	margin: 20px;
+}
+
+#navigation #bio a {
+	padding: 20px 0px;
+	
+}
+
+.submenu {
+	display: none;
+}
+
+.topmenu:hover .submenu {
+	display: inline;
 }
