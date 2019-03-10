@@ -1,13 +1,11 @@
 html {
-	margin: 0;
 	height: 100%;
-	width: 100%;
 	
 	--mainColor: #820602; /*red*/
 	--accentColor: #fcb649; /*yellow*/
 	
 	--headerFont: Inconsolata;
-	--bodyFont: Helvetica;
+	--bodyFont: Helvetica Neue;
 }
 
 #navigation {
@@ -18,26 +16,30 @@ html {
 
 /* images */
 
-#parallaxBackground {  /* styles the parallaxBackgroundTop div */
 
-	height: 100%; 
-    width: 100%;
-
-    background-attachment: fixed;
-    background-position: center; /* 'center center' keeps the entire image centered as opposed to... not doing that */
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    position: relative;
-    
-}
 
 /* text */
 
 h1 {
 	color: var(--mainColor);
+	
+	font-family: var(--headerFont);
 }
 
 body {
-	font: var(--bodyFont);
+	font-family: var(--bodyFont);
+}
+
+/* elements */
+
+#header {
+	text-transform: lowercase;
+}
+
+#navigation {
+	text-transform: lowercase;
+}
+
+#navigation #bio {
+	background-image: ;
 }
